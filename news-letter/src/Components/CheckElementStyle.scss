@@ -1,0 +1,14 @@
+.check_status_element {
+	display: flex;
+	flex-direction: row;
+
+	margin-bottom: 12px;
+}
+
+.chk_img_elmt {
+	flex: 1;
+}
+
+.chk_txt_elmt {
+	flex: 20;
+}

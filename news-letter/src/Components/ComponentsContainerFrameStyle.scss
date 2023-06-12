@@ -1,0 +1,25 @@
+@import '../Styles/GlobalStyles.scss';
+
+$ComponentTopBottomMargin:10px;
+
+.component-frame {
+	flex: 1;
+	margin: 25px;
+	background: chartreuse;
+	border: 1px solid black;
+}
+
+@media only screen and (min-width:$DeskTopFirstBreakPoint) {
+	.component-frame {
+		background: blue;
+
+		margin-left: 4px;
+		margin-right: 4px;
+		margin-top: $ComponentTopBottomMargin;
+		margin-bottom: $ComponentTopBottomMargin;		
+	}
+}
+
+@media only screen and (min-width:$DeskTopLargeBreakPoint) {
+
+}

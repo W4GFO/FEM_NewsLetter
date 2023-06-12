@@ -1,0 +1,42 @@
+@import '../Styles/GlobalStyles.scss';
+
+.primary_frame {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	background-color: orange;
+}
+
+@media only screen and (min-width:$MobileLargerMobileBreakPoint){
+	.primary_frame {
+		width: 80%;
+		height: 80%;
+		background-color: green;
+	}
+}
+
+@media only screen and (min-width:$MobileSuperLargeMobileBreakPoint){
+	.primary_frame {
+		width: 80%;
+		height: 80%;
+		background-color: green;
+	}
+}
+
+@media only screen and (min-width:$DeskTopFirstBreakPoint) {
+	.primary_frame {
+		width: 80%;
+		height: 80%;
+		flex-direction: row;
+		background-color: green;
+	}
+}
+
+@media only screen and (min-width:$DeskTopLargeBreakPoint) {
+	.primary_frame {
+		width: 80%;
+		height: 80%;
+		background-color: green;
+	}
+}
