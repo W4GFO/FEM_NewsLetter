@@ -28,5 +28,6 @@ div#root {
   overflow: hidden;
   overflow-y: scroll;
 
-  background-image: linear-gradient($SoftViolet,$SoftBlue)
+  background: $DarkSlateGrey;
+  //background-image: linear-gradient($SoftViolet,$SoftBlue)
 }

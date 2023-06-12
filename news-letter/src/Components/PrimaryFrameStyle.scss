@@ -5,14 +5,14 @@
 	height: 90%;
 	display: flex;
 	flex-direction: column;
-	background-color: orange;
+	background-color: $White;
+	border-radius: 20px;
 }
 
 @media only screen and (min-width:$MobileLargerMobileBreakPoint){
 	.primary_frame {
 		width: 80%;
 		height: 80%;
-		background-color: green;
 	}
 }
 
@@ -20,7 +20,6 @@
 	.primary_frame {
 		width: 80%;
 		height: 80%;
-		background-color: green;
 	}
 }
 
@@ -29,7 +28,6 @@
 		width: 80%;
 		height: 80%;
 		flex-direction: row;
-		background-color: green;
 	}
 }
 
@@ -37,6 +35,5 @@
 	.primary_frame {
 		width: 80%;
 		height: 80%;
-		background-color: green;
 	}
 }

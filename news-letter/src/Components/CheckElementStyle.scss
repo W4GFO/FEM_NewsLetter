@@ -2,7 +2,8 @@
 	display: flex;
 	flex-direction: row;
 
-	margin-bottom: 12px;
+	height: 40px;
+	align-items: center;
 }
 
 .chk_img_elmt {
@@ -11,4 +12,8 @@
 
 .chk_txt_elmt {
 	flex: 20;
+	font-size: 0.9em;
+	text-align: start;
+	margin-top: 12px;
+	padding-left: 8px;
 }
