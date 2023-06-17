@@ -1,0 +1,82 @@
+@import '../../Styles/GlobalStyles.scss';
+
+$InnerFrameMargins:24px;
+
+.popup {
+	width: 25%;
+	//height: 400px;
+	aspect-ratio: 1/1;
+	position: fixed;
+	z-index: 1;
+	background-color:beige; //$White;
+
+	border-radius: 18px;
+	border: 1px solid chartreuse;
+}
+
+.popup-inner-frame {
+	position: relative;
+	height: 100%;
+	margin: 0px $InnerFrameMargins 0px $InnerFrameMargins;
+
+	p {
+		margin-top: 28px;
+		color: $DarkSlateGrey;
+	}
+
+	p:first-of-type {
+		font-size: 2.3em;
+		font-weight: bolder;
+	}
+
+	border: 1px solid black;
+
+	button {
+		border: none;
+		outline: none;
+		border-radius: 8px;
+
+		position: absolute;
+
+		bottom: 0;
+		margin-bottom:8px;
+
+		width: 100%;
+
+		color: $White;
+		font-size: 1.1em;
+		font-weight: 550;
+
+		height: 46px;
+		background: $TextVeryDarkGrayishBlue;
+	}
+}
+
+@media only screen and (max-width:$MobileVeryLargeMobileBreakPoint) {
+	.popup {
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0px;
+	}
+
+	.popup-inner-frame {
+		img {
+			margin-top: 92px;
+		}
+
+		p {
+			margin-top: 28px;
+		}
+
+		p:first-of-type {
+			font-size: 2.3em;
+			font-weight: bolder;
+		}
+
+		button {
+			
+			height: 50px;
+			margin-bottom:28px;
+		}
+	}
+}

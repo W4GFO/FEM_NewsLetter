@@ -1,16 +1,38 @@
+@import '../Styles/GlobalStyles.scss';
+
+$MobileImageBorderRadius:16px;
+
 .marketing_image_frame {
 	width: 100%;
 	height: 100%;
 
 	text-align: center;
-	background: chocolate;
+	position: relative;
+
+	img {
+		position: absolute;
+
+		max-width: 100%;
+		max-height: 100%;
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		object-fit:contain;
+	}
 }
 
-.marketing_image_frame img {
-	//display: block;
-	max-width: 100%;
-	max-height: 100%;
-	
-	width: auto;
-	height: auto;
+@media only screen and (max-width:$MobileVeryLargeMobileBreakPoint){
+	.marketing_image_frame {
+
+		img{
+			width: 100%;
+			top:0px;
+			transform: translate(-50%, 0%);
+			object-fit:cover;
+
+			border-radius: 0px 0px $MobileImageBorderRadius $MobileImageBorderRadius;
+		}
+	}
 }

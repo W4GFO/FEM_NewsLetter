@@ -2,38 +2,44 @@
 
 .primary_frame {
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	display: flex;
-	flex-direction: column;
-	background-color: $White;
+	position: relative;
+
 	border-radius: 20px;
+	background-color: $White;
 }
 
-@media only screen and (min-width:$MobileLargerMobileBreakPoint){
+@media only screen and (max-width:$MobileVeryLargeMobileBreakPoint) {
 	.primary_frame {
-		width: 80%;
-		height: 80%;
+		border-radius: 0px;
+		flex-direction: column;
 	}
 }
 
-@media only screen and (min-width:$MobileSuperLargeMobileBreakPoint){
+@media only screen and (min-width:$MobileVeryLargeMobileBreakPoint) {
 	.primary_frame {
 		width: 80%;
 		height: 80%;
+
+		max-width: 675px;
+		max-height: 450px;
+
+		flex-direction: row;
 	}
 }
+
+@media only screen and (min-width:$MobileSuperLargeMobileBreakPoint) {}
 
 @media only screen and (min-width:$DeskTopFirstBreakPoint) {
 	.primary_frame {
 		width: 80%;
 		height: 80%;
 		flex-direction: row;
+
+		max-width: 775px;
+		max-height: 500px;
 	}
 }
 
-@media only screen and (min-width:$DeskTopLargeBreakPoint) {
-	.primary_frame {
-		width: 80%;
-		height: 80%;
-	}
-}
+@media only screen and (min-width:$DeskTopLargeBreakPoint) {}
