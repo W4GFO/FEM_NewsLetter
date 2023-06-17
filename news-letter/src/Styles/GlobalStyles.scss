@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$MobileLargerMobileBreakPoint:451px;
+$MobileVeryLargeMobileBreakPoint:575px;
+$MobileSuperLargeMobileBreakPoint:760px;
+
+$DeskTopFirstBreakPoint:860px;
+$DeskTopLargeBreakPoint:1080px;
+
+$GlobalBorderRadius:12px;
+
+//Primary 
+$Tomato: hsl(4, 100%, 67%);
+
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);
+$CharcoalGrey: hsl(235, 18%, 26%);
+$DarkSlateGrey: hsl(234, 29%, 20%);
+
+$SoftViolet: hsl(273, 75%, 66%);
+$SoftBlue: hsl(240, 73%, 65%);
+
+//Text Colors
+$TextDarkGrayishBlue: hsl(240, 6%, 50%);
+$TextVeryDarkGrayishBlue: hsl(237, 12%, 33%);
+
+//Dividers color
+$DividerLightGrayishBlue: hsl(240, 5%, 91%);
+
+$FontWeightLight:400;
+$FontWeightHeavy:700;
