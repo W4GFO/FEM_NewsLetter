@@ -1,23 +1,49 @@
+# Newsletter Card
+This is a FrontEnd Mentor project
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Specifically:
 
-In the project directory, you can run:
+```
+> npm create-react-app news-letter --template typescript
+```
 
-### `npm start`
+## Additional NPM installs:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project requires the following additional npm install:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+> npm install sass
+```
 
-### `npm test`
+## General Architectural layout:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project contains the following components:
+
+	- src
+		index.tsx //The primary react-app standard starting code and creates a flex-box to center the main UI
+		App.tsx //Sets up, and contains the initial ParentFrame components 
+
+		- Components
+			ParentFrame //The primary container which holds the two Components: <ComponentsContainerFrame> more specifically
+
+			ComponentsContainerFrame //One holds the image, the other holds the frame for all the marketing text and email input. 			
+
+			MarketingMaterialFrame and MarketingImageFrame: The marketing information in the two <ComponentsContainerFrame>
+			
+			Popup component  //This is just the popup when the user submitts their email.
+
+### Logic of the architecture
+
+	Have the components which need to be worked through to iron out the layout isolated from the content.
+
+	Then, have the components which display data isolated from issues with the overall layout of the primary page.
+
+	Though this architecture and the number of components may seem overkill for this project, I want to start designing 
+	as if the project were larger.  Not certain this is the right concept at this point or not.
 
 ### `npm run build`
 
@@ -28,16 +54,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
