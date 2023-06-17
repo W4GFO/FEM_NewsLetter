@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/FEM_NewsLetter/static/css/main.073c9b0a.css",
-    "main.js": "/FEM_NewsLetter/static/js/main.f8621f4b.js",
+    "main.css": "/FEM_NewsLetter/static/css/main.305ed97b.css",
+    "main.js": "/FEM_NewsLetter/static/js/main.90508333.js",
     "static/js/787.cf406755.chunk.js": "/FEM_NewsLetter/static/js/787.cf406755.chunk.js",
-    "static/media/logo.svg": "/FEM_NewsLetter/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/mainmobile.svg": "/FEM_NewsLetter/static/media/mainmobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
+    "static/media/maindesktop.svg": "/FEM_NewsLetter/static/media/maindesktop.ce2024babf0bc98a8862252535b544c9.svg",
     "index.html": "/FEM_NewsLetter/index.html",
-    "main.073c9b0a.css.map": "/FEM_NewsLetter/static/css/main.073c9b0a.css.map",
-    "main.f8621f4b.js.map": "/FEM_NewsLetter/static/js/main.f8621f4b.js.map",
+    "static/media/icon-success.svg": "/FEM_NewsLetter/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
+    "static/media/icon-list.svg": "/FEM_NewsLetter/static/media/icon-list.5e317c030bb9f11a33433484a2c590e1.svg",
+    "main.305ed97b.css.map": "/FEM_NewsLetter/static/css/main.305ed97b.css.map",
+    "main.90508333.js.map": "/FEM_NewsLetter/static/js/main.90508333.js.map",
     "787.cf406755.chunk.js.map": "/FEM_NewsLetter/static/js/787.cf406755.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f8621f4b.js"
+    "static/css/main.305ed97b.css",
+    "static/js/main.90508333.js"
   ]
 }
