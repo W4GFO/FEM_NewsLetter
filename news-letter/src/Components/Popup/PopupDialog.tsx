@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import {SubmitActionContext} from '../PrimaryFrame'
 
 type PopupProps = {
-	usrEmail?:string
+	usrEmail:string
 }
 
 export const PopupDialog = ({usrEmail}: PopupProps) => {

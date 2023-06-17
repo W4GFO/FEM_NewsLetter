@@ -10,6 +10,10 @@
 	background-color: $White;
 }
 
+.blur-it {
+	filter: blur(5px);
+}
+
 @media only screen and (max-width:$MobileVeryLargeMobileBreakPoint) {
 	.primary_frame {
 		border-radius: 0px;

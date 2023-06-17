@@ -1,4 +1,3 @@
-import './App.scss'
 import {PrimaryFrame} from './Components/PrimaryFrame'
 
 function App() {

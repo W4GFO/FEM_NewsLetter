@@ -3,21 +3,28 @@
 $InnerFrameMargins:24px;
 
 .popup {
-	width: 25%;
-	//height: 400px;
+	width: 28%;
 	aspect-ratio: 1/1;
 	position: fixed;
 	z-index: 1;
-	background-color:beige; //$White;
+	background-color:$White;
 
 	border-radius: 18px;
-	border: 1px solid chartreuse;
+	border: 1px solid black;
+
+	&.blur {
+		filter: blur(500px);
+	}
 }
 
 .popup-inner-frame {
 	position: relative;
 	height: 100%;
 	margin: 0px $InnerFrameMargins 0px $InnerFrameMargins;
+
+	img {
+		margin-top: 32px;
+	}
 
 	p {
 		margin-top: 28px;
@@ -28,8 +35,6 @@ $InnerFrameMargins:24px;
 		font-size: 2.3em;
 		font-weight: bolder;
 	}
-
-	border: 1px solid black;
 
 	button {
 		border: none;
@@ -44,11 +49,14 @@ $InnerFrameMargins:24px;
 		width: 100%;
 
 		color: $White;
-		font-size: 1.1em;
-		font-weight: 550;
+		font-weight: $FontWeightHeavy;
 
 		height: 46px;
 		background: $TextVeryDarkGrayishBlue;
+	}
+
+	button:active {
+		background: linear-gradient(to right, $SoftViolet, $Tomato)
 	}
 }
 
@@ -56,6 +64,7 @@ $InnerFrameMargins:24px;
 	.popup {
 		width: 100vw;
 		height: 100vh;
+		border: none;
 		border-radius: 0px;
 	}
 
@@ -68,13 +77,7 @@ $InnerFrameMargins:24px;
 			margin-top: 28px;
 		}
 
-		p:first-of-type {
-			font-size: 2.3em;
-			font-weight: bolder;
-		}
-
 		button {
-			
 			height: 50px;
 			margin-bottom:28px;
 		}
